@@ -3,7 +3,8 @@ CONFIG -= qt
 CONFIG += generateC
 
 DISTFILES +=  $(HOME)/tool-inst/share/taste-types/taste-types.asn \
-    samrh71.dv.xml
+    samrh71.dv.xml \
+    samv71.dv.xml
 DISTFILES += lossless-comp-decomp.msc
 DISTFILES += interfaceview.xml
 DISTFILES += work/binaries/*.msc
