@@ -1,0 +1,46 @@
+<InterfaceView version="1.2" componentURL="/home/taste/.local/share/QtProject/QtCreator/components_library/.git_bares/DataCompressor_bare">
+<Function id="{74c5ae88-6c92-4920-895f-9dc849ed4a51}" name="DataCompressor" is_type="NO" language="C" default_implementation="default" fixed_system_element="NO" required_system_element="NO" startup_priority="1" instances_max="1" instances_min="1">
+    <Property name="TASTE_IV_Properties::Default_Codegen" value="Ada"/>
+<Provided_Interface id="{6b752511-ec83-4b82-8ec1-4a90fed7e5e5}" name="StartCompression" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Provided_Interface id="{a02bd004-287a-4b50-803c-7b295fbc5014}" name="WriteBuffer" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Input_Parameter name="dataBuffer" type="CompressorDataBuffer" encoding="NATIVE"/>
+    <Input_Parameter name="dataLength" type="T-UInt32" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{57f6d36d-c92a-44dd-9f92-ce9df5b3be75}" name="ClearBuffer" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+</Provided_Interface>
+
+<Provided_Interface id="{037ddd7c-ff13-4213-a3ed-1d7f10123a0c}" name="Status" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="currentStatus" type="CompressorState" encoding="NATIVE"/>
+    <Output_Parameter name="compressedDataLength" type="T-UInt32" encoding="NATIVE"/>
+</Provided_Interface>
+
+<Provided_Interface id="{fb401655-88ba-4a6d-ba98-a0699718d8ae}" name="ReadData" kind="Protected" enable_multicast="true" layer="default" required_system_element="NO" is_simulink_interface="false" wcet="0">
+    <Output_Parameter name="dataOut" type="CompressorDataBuffer" encoding="NATIVE"/>
+    <Input_Parameter name="byteOffset" type="T-UInt32" encoding="NATIVE"/>
+    <Input_Parameter name="bytesToRead" type="T-UInt32" encoding="NATIVE"/>
+    <Output_Parameter name="bytesWritten" type="T-UInt32" encoding="NATIVE"/>
+</Provided_Interface>
+
+    <Implementations>
+        <Implementation name="default" language="C"/>
+    </Implementations>
+</Function>
+<UI version="1.0" ><Entity id="{74c5ae88-6c92-4920-895f-9dc849ed4a51}"><Taste coordinates="66000 22000 87000 39000">
+</Taste>
+</Entity><Entity id="{6b752511-ec83-4b82-8ec1-4a90fed7e5e5}"><Taste coordinates="66000 25000">
+</Taste>
+</Entity><Entity id="{a02bd004-287a-4b50-803c-7b295fbc5014}"><Taste coordinates="66000 31000">
+</Taste>
+</Entity><Entity id="{57f6d36d-c92a-44dd-9f92-ce9df5b3be75}"><Taste coordinates="66000 28000">
+</Taste>
+</Entity><Entity id="{037ddd7c-ff13-4213-a3ed-1d7f10123a0c}"><Taste coordinates="66000 34000">
+</Taste>
+</Entity><Entity id="{fb401655-88ba-4a6d-ba98-a0699718d8ae}"><Taste coordinates="66000 37000">
+</Taste>
+</Entity>
+</UI>
+
+</InterfaceView>
