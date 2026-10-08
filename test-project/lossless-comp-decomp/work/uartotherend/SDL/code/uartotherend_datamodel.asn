@@ -2,7 +2,7 @@ Uartotherend-Datamodel DEFINITIONS ::=
 BEGIN
 --  This file was generated automatically by OpenGEODE
 IMPORTS
-   MyInteger, CompressorDataBuffer, CompressorState FROM CG-TEST-2-DATAVIEW
+   MyInteger, CompressorDataBuffer, CompressorState FROM LOSSLESS-COMP-DECOMP-DATAVIEW
    T-Int32, T-UInt32, T-Int8, T-UInt8, T-Boolean, T-Null-Record, T-Runtime-Error FROM TASTE-BasicTypes
    PID-Range, PID FROM System-Dataview;
 
